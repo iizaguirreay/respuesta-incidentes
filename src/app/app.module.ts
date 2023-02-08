@@ -20,11 +20,17 @@ import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
+import { FamilyViewComponent } from './components/family-view/family-view.component';
+import { FamilyCardComponent } from './components/family-view/family-card/family-card.component';
+import { ActionViewComponent } from './components/family-view/action-view/action-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    FamilyViewComponent,
+    FamilyCardComponent,
+    ActionViewComponent
   ],
   imports: [
     BrowserModule,

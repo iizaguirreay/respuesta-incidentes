@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <div class="" style="height: 100vh">
+    <!-- <div class="d-flex justify-content-center align-items-center" style="height: 100vh"> -->
+      <!-- <div class="text-center"> -->
+        <!-- <app-family-view></app-family-view> -->
+      <!-- </div> -->
+      <div class="row">
+        <ng-template ngFor let-item [ngForOf]="grupos" let-i="index">
+            <app-family-card [grupo]="item" class="col-md-2 pt-2" (click)="goToAction(item)"></app-family-card>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+
+
+
