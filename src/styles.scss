@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+//@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+//@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+//@import '~@fortawesome/fontawesome-free/scss/regular.scss';
+//@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+ 
+@import '../node_modules/mdb-angular-ui-kit/assets/scss/mdb.scss';
+//@import '~mdb-angular-ui-kit/assets/scss/mdb.scss';
+
+.bg-ziur-iluna {
+    background-color: #004A91 !important;
+}
+
+.bg-recursos-humanos {
+    background-color: #B07670;
+}
+.bg-formacion{
+    background-color: #AFABAB;
+}
+.bg-acceso-fisico{
+    background-color: #9DC3E6;
+}
+.bg-threat-hunting {
+    background-color: #ED9BCA;
+}
+.bg-monitorizacion{
+    background-color: #7030A0;
+}
+.bg-gestion-activos{
+    background-color: #002060;
+}
+.bg-gestion-identidad{
+    background-color: #C5E0B4;
+}
+.bg-respuesta-incidentes{
+    background-color: #ED7D31;
+}
+.bg-comunicacion{
+    background-color: #ff000097;
+}
+.bg-plan-continuidad{
+    background-color: #548235;
+}
+.bg-proteccion-amenazas{
+    background-color: #000000;
+}
+
+body{
+    // background-color: #E0E0E0;
+    background-color: #EEEEEE;
+}
