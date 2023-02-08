@@ -6,7 +6,7 @@
       <!-- </div> -->
       <div class="row">
         <ng-template ngFor let-item [ngForOf]="grupos" let-i="index">
-            <app-family-card [grupo]="item" class="col-md-2 pt-2" (click)="goToAction(item)"></app-family-card>
+            <app-family-card [grupo]="item" class="col-md-2 col-12 pt-3" (click)="goToAction(item)"></app-family-card>
         </ng-template>
       </div>
     </div>
