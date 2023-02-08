@@ -23,6 +23,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FamilyViewComponent } from './components/family-view/family-view.component';
 import { FamilyCardComponent } from './components/family-view/family-card/family-card.component';
 import { ActionViewComponent } from './components/family-view/action-view/action-view.component';
+import { ActionCardComponent } from './components/family-view/action-view/action-card/action-card.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ActionViewComponent } from './components/family-view/action-view/action
     HeaderComponent,
     FamilyViewComponent,
     FamilyCardComponent,
-    ActionViewComponent
+    ActionViewComponent,
+    ActionCardComponent
   ],
   imports: [
     BrowserModule,

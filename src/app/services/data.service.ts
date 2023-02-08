@@ -6,10 +6,11 @@ import { Injectable } from '@angular/core';
 export class DataService {
 
   private groupId: number = 0;
+  private currentGroup: any;
 
   constructor() { }
 
-  private actions = [];
+  private actions = [{}];
   private grupos = [
     {
       id: 1,
@@ -90,6 +91,9 @@ export class DataService {
     }
   ];
 
+  getActions(){
+    return this.actions;
+  }
   getGrupos(){
     return this.grupos;
   }
@@ -97,9 +101,68 @@ export class DataService {
   setGroupId(id:number){
     this.groupId = id;
   }
+  setGroup(grupo: any){
+    this.currentGroup = grupo;
+  }
+  getCurrentGroup(){
+    return this.currentGroup;
+  }
 
   setActions(){
-
+    switch(this.groupId) { 
+      case 0: { 
+        this.actions = [{}];
+        break;  
+      }
+      case 1: { 
+        this.actions = this.humanos; 
+        break; 
+      } 
+      case 2: { 
+        this.actions = this.formacion;
+        break; 
+      }
+      case 3: { 
+        this.actions = this.fisico;
+        break; 
+      }
+      case 4: { 
+        this.actions = this.inteligencia;
+        break;  
+      }
+      case 5: { 
+        this.actions = this.monitorizacion;
+        break;  
+      }
+      case 6: { 
+        this.actions = this.activos;
+        break;  
+      }
+      case 7: { 
+        this.actions = this.identidad;
+        break;  
+      }
+      case 8: { 
+        this.actions = this.respuesta;
+        break;  
+      }
+      case 9: { 
+        this.actions = this.comunicacion;
+        break;  
+      }
+      case 10: { 
+        this.actions = this.continuidad;
+        break;  
+      }
+      case 11: { 
+        this.actions = this.prevencion;
+        break;  
+      }
+      default: { 
+         this.actions = [{}];
+         break; 
+      } 
+   }
   }
 
   comunicacion = [

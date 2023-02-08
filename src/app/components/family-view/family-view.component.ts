@@ -18,6 +18,7 @@ export class FamilyViewComponent {
 
   goToAction(grupo: any){
     this.dataService.setGroupId(grupo.id);
+    this.dataService.setGroup(grupo);
     this.dataService.setActions();
     this.router.navigate(['/actions']);
   }

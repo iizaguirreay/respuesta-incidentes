@@ -9,6 +9,6 @@ export class FamilyCardComponent {
   @Input() grupo: any = {};
 
   ngOnInit() {
-    console.log(this.grupo);
+    
   }
 }
